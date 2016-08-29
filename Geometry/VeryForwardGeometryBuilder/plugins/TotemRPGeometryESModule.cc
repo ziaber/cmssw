@@ -83,7 +83,8 @@ using namespace edm;
 
 TotemRPGeometryESModule::TotemRPGeometryESModule(const edm::ParameterSet &p)
 {
-  verbosity = p.getUntrackedParameter<unsigned int>("verbosity", 1);  
+  verbosity = p.getUntrackedParameter<unsigned int>("verbosity", 1);
+  std::cout << "TotemRPGeometryESModule" << std::endl;
 
   setWhatProduced(this, &TotemRPGeometryESModule::produceMeasuredDDCV);
   setWhatProduced(this, &TotemRPGeometryESModule::produceMeasuredGD);
