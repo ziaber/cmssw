@@ -28,6 +28,7 @@ char TotemRPGeometry::Build(const DetGeomDesc *gD)
 
     // check if it is RP detector
     if (! d->name().name().compare(DDD_TOTEM_RP_DETECTOR_NAME)) {
+    std::cout << "DetID: "<<std::endl;
       std::cout<<d->geographicalID().rawId()<<std::endl;
       AddDetector(d->geographicalID().rawId(), d);
     }
