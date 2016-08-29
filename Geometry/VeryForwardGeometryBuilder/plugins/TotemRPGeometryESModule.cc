@@ -417,6 +417,7 @@ void TotemRPGeometryESModule::ApplyAlignments(const edm::ESHandle<DDCompactView>
 
 std::unique_ptr<DDCompactView> TotemRPGeometryESModule::produceMeasuredDDCV(const VeryForwardMeasuredGeometryRecord &iRecord)
 {
+    cout << "produceMeasuredDDCV" << endl;
     // get the ideal DDCompactView from EventSetup
     edm::ESHandle<DDCompactView> idealCV;
     iRecord.getRecord<IdealGeometryRecord>().get("XMLIdealGeometryESSource_CTPPS", idealCV);
@@ -450,6 +451,8 @@ std::unique_ptr<DDCompactView> TotemRPGeometryESModule::produceMeasuredDDCV(cons
 
 std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceMeasuredGD(const VeryForwardMeasuredGeometryRecord &iRecord)
 {
+    cout << "produceMeasuredGD" << endl;
+
   // get the DDCompactView from EventSetup
   edm::ESHandle<DDCompactView> cpv;
   iRecord.get(cpv);
@@ -463,6 +466,8 @@ std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceMeasuredGD(const Ve
 
 std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceRealGD(const VeryForwardRealGeometryRecord &iRecord)
 {
+    cout << "produceRealGD" << endl;
+
   // get the input (= measured) GeometricalDet
   edm::ESHandle<DetGeomDesc> measuredGD;
   iRecord.getRecord<VeryForwardMeasuredGeometryRecord>().get(measuredGD);
@@ -489,6 +494,8 @@ std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceRealGD(const VeryFo
 
 std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceMisalignedGD(const VeryForwardMisalignedGeometryRecord &iRecord)
 {
+    cout << "produceMisalignedGD" << endl;
+
   // get the input (= measured) GeometricalDet
   edm::ESHandle<DetGeomDesc> measuredGD;
   iRecord.getRecord<VeryForwardMeasuredGeometryRecord>().get(measuredGD);
@@ -514,6 +521,8 @@ std::unique_ptr<DetGeomDesc> TotemRPGeometryESModule::produceMisalignedGD(const 
 
 std::unique_ptr<TotemRPGeometry> TotemRPGeometryESModule::produceMeasuredTG(const VeryForwardMeasuredGeometryRecord &iRecord)
 {
+    cout << "produceMeasuredTG" << endl;
+
   edm::ESHandle<DetGeomDesc> gD;
   iRecord.get(gD);
   
@@ -524,6 +533,8 @@ std::unique_ptr<TotemRPGeometry> TotemRPGeometryESModule::produceMeasuredTG(cons
 
 std::unique_ptr<TotemRPGeometry> TotemRPGeometryESModule::produceRealTG(const VeryForwardRealGeometryRecord &iRecord)
 {
+    cout << "produceRealTG" << endl;
+
   edm::ESHandle<DetGeomDesc> gD;
   iRecord.get(gD);
 
@@ -534,6 +545,8 @@ std::unique_ptr<TotemRPGeometry> TotemRPGeometryESModule::produceRealTG(const Ve
 
 std::unique_ptr<TotemRPGeometry> TotemRPGeometryESModule::produceMisalignedTG(const VeryForwardMisalignedGeometryRecord &iRecord)
 {
+    cout << "produceMisalignedTG" << endl;
+
   edm::ESHandle<DetGeomDesc> gD;
   iRecord.get(gD);
 
