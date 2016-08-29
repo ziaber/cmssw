@@ -73,7 +73,7 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 			unsigned int rp = A % 10;
 			unsigned int detector = cN[cN.size() - 1];
       std::cout<<"arm:"<<arm<<", station:"<<station<<", rp:"<<rp<<", detector:"<<detector<<std::endl;
-      std::cout<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).DetectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).rawId()<<std::endl;
+      std::cout<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).detectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).decToRawId()<<std::endl;
 			newGD->setGeographicalID(TotemRPDetId(arm, station, rp, detector));
 			//.cout << "A = " << A << "; arm = " << arm << " st = " << station << " rp = " << rp << " det = " << detector << " --> "<< gd->geographicalID().rawId() << endl;
 		}
