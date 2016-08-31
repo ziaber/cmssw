@@ -24,6 +24,8 @@
 
 DDDTotemRPContruction::DDDTotemRPContruction()
 {
+	using namespace std;
+
 ofstream myfile;
     myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/Test/DetIdLog.txt", ios::app);
 	myfile << "DDDTotemRPConstruction" << endl;
