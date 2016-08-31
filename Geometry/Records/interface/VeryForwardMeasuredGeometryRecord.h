@@ -25,9 +25,7 @@ class VeryForwardMeasuredGeometryRecord : public edm::eventsetup::DependentRecor
 						   <VeryForwardMeasuredGeometryRecord, boost::mpl::vector<IdealGeometryRecord, RPMeasuredAlignmentRecord /*, ... */> >
 {
     public:
-        VeryForwardMeasuredGeometryRecord(){
-            std::cout << "VeryForwardMeasuredGeometryRecord" << std::endl;
-        }
+        VeryForwardMeasuredGeometryRecord();
 
 };
 

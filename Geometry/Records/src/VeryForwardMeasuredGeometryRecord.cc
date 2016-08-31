@@ -9,4 +9,10 @@
 #include "Geometry/Records/interface/VeryForwardMeasuredGeometryRecord.h"
 #include "FWCore/Framework/interface/eventsetuprecord_registration_macro.h"
 
+VeryForwardMeasuredGeometryRecord::VeryForwardMeasuredGeometryRecord()
+{
+    std::cout << "VeryForwardMeasuredGeometryRecord" << std::endl;
+
+}
+
 EVENTSETUP_RECORD_REG(VeryForwardMeasuredGeometryRecord);
