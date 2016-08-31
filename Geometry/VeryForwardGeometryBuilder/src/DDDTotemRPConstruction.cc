@@ -58,7 +58,7 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 
 	// loop over siblings in the level
 	ofstream myfile;
-    myfile.open ("DetIdLog.txt");
+    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/TestDetIdLog.txt");
 	do {
 		// create new DetGeomDesc node and add it to the parent's (gd) list
 		DetGeomDesc* newGD = new DetGeomDesc(fv);
