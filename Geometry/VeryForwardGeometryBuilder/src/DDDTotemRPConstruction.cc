@@ -5,6 +5,8 @@
 *	Jan Kaspar (jan.kaspar@gmail.com) 
 *
 ****************************************************************************/
+#include <iostream>
+#include <fstream>
 
 #include "Geometry/VeryForwardGeometryBuilder/interface/DDDTotemRPConstruction.h"
 #include "DetectorDescription/Core/interface/DDFilteredView.h"
