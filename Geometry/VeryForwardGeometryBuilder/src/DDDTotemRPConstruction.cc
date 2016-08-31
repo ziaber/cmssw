@@ -5,7 +5,6 @@
 *	Jan Kaspar (jan.kaspar@gmail.com) 
 *
 ****************************************************************************/
-#include <iostream>
 #include <fstream>
 
 #include "Geometry/VeryForwardGeometryBuilder/interface/DDDTotemRPConstruction.h"
@@ -25,6 +24,10 @@
 
 DDDTotemRPContruction::DDDTotemRPContruction()
 {
+ofstream myfile;
+    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/Test/DetIdLog.txt", ios::app);
+	myfile << "DDDTotemRPConstruction" << endl;
+	myfile.close();
 }
 
 //----------------------------------------------------------------------------------------------------
@@ -58,7 +61,7 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 
 	// loop over siblings in the level
 	ofstream myfile;
-    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/TestDetIdLog.txt");
+    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/Test/DetIdLog.txt", ios::app);
 	do {
 		// create new DetGeomDesc node and add it to the parent's (gd) list
 		DetGeomDesc* newGD = new DetGeomDesc(fv);
