@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 process = cms.Process("GeometryInfo")
 
 # minimum of logs
-process.load("Configuration.TotemCommon.LoggerMin_cfi")
+# process.load("Configuration.TotemCommon.LoggerMin_cfi")
 
 # geometry
 process.load("Geometry.VeryForwardGeometry.geometryRP_cfi")
