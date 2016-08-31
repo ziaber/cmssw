@@ -9,6 +9,7 @@
 #ifndef RECORDS_VeryForwardMeasuredGeometryRecord_H
 #define RECORDS_VeryForwardMeasuredGeometryRecord_H
 
+#include <iostream>
 #include "FWCore/Framework/interface/DependentRecordImplementation.h"
 #include "Geometry/Records/interface/IdealGeometryRecord.h"
 
@@ -23,6 +24,11 @@
 class VeryForwardMeasuredGeometryRecord : public edm::eventsetup::DependentRecordImplementation
 						   <VeryForwardMeasuredGeometryRecord, boost::mpl::vector<IdealGeometryRecord, RPMeasuredAlignmentRecord /*, ... */> >
 {
+    public:
+        VeryForwardMeasuredGeometryRecord(){
+            std::cout << "VeryForwardMeasuredGeometryRecord" << std::endl;
+        }
+
 };
 
 #endif
