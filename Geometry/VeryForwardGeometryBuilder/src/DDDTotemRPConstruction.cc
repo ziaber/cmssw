@@ -24,12 +24,6 @@
 
 DDDTotemRPContruction::DDDTotemRPContruction()
 {
-	using namespace std;
-
-ofstream myfile;
-    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/Test/DetIdLog.txt", ios::app);
-	myfile << "DDDTotemRPConstruction" << endl;
-	myfile.close();
 }
 
 //----------------------------------------------------------------------------------------------------
@@ -62,8 +56,6 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 	if (! fv->firstChild()) return;
 
 	// loop over siblings in the level
-	ofstream myfile;
-    myfile.open ("/home/agh/mziaber/PycharmProjects/tmp/CMSSW_8_1_0_pre8/src/Configuration/Test/DetIdLog.txt", ios::app);
 	do {
 		// create new DetGeomDesc node and add it to the parent's (gd) list
 		DetGeomDesc* newGD = new DetGeomDesc(fv);
@@ -81,10 +73,10 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 			unsigned int station = (A % 100) / 10;
 			unsigned int rp = A % 10;
 			unsigned int detector = cN[cN.size() - 1];
-            myfile<<"arm:"<<arm<<", station:"<<station<<", rp:"<<rp<<", detector:"<<detector<<std::endl;
-            myfile<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).detectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).decToRawId(TotemRPDetId(arm, station, rp, detector).detectorDecId())<<std::endl;
+            cout<<"arm:"<<arm<<", station:"<<station<<", rp:"<<rp<<", detector:"<<detector<<std::endl;
+            cout<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).detectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).decToRawId(TotemRPDetId(arm, station, rp, detector).detectorDecId())<<std::endl;
 			newGD->setGeographicalID(TotemRPDetId(arm, station, rp, detector));
-			myfile << "A = " << A << "; arm = " << arm << " st = " << station << " rp = " << rp << " det = " << detector << " --> "<< gd->geographicalID().rawId() << endl;
+			cout << "A = " << A << "; arm = " << arm << " st = " << station << " rp = " << rp << " det = " << detector << " --> "<< gd->geographicalID().rawId() << endl;
 		}
 
 		gd->addComponent(newGD);
@@ -92,7 +84,6 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 		// recursion
 		buildDetGeomDesc(fv, newGD);
 	} while (fv->nextSibling());
-    myfile.close();
 	// go a level up
 	fv->parent();
 }
