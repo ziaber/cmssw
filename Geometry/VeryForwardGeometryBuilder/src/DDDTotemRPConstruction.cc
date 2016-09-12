@@ -5,6 +5,7 @@
 *	Jan Kaspar (jan.kaspar@gmail.com) 
 *
 ****************************************************************************/
+#include <fstream>
 
 #include "Geometry/VeryForwardGeometryBuilder/interface/DDDTotemRPConstruction.h"
 #include "DetectorDescription/Core/interface/DDFilteredView.h"
@@ -72,10 +73,10 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 			unsigned int station = (A % 100) / 10;
 			unsigned int rp = A % 10;
 			unsigned int detector = cN[cN.size() - 1];
-      //.std::cout<<"arm:"<<arm<<", station:"<<station<<", rp:"<<rp<<", detector:"<<detector<<std::endl;
-      //.std::cout<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).DetectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).rawId()<<std::endl;
+            cout<<"arm:"<<arm<<", station:"<<station<<", rp:"<<rp<<", detector:"<<detector<<std::endl;
+            cout<<"TotemRPDetId(arm, station, rp, detector) "<<TotemRPDetId(arm, station, rp, detector).detectorDecId()<<", "<<TotemRPDetId(arm, station, rp, detector).decToRawId(TotemRPDetId(arm, station, rp, detector).detectorDecId())<<std::endl;
 			newGD->setGeographicalID(TotemRPDetId(arm, station, rp, detector));
-			//.cout << "A = " << A << "; arm = " << arm << " st = " << station << " rp = " << rp << " det = " << detector << " --> "<< gd->geographicalID().rawId() << endl;
+			cout << "A = " << A << "; arm = " << arm << " st = " << station << " rp = " << rp << " det = " << detector << " --> "<< gd->geographicalID().rawId() << endl;
 		}
 
 		gd->addComponent(newGD);
@@ -83,7 +84,6 @@ void DDDTotemRPContruction::buildDetGeomDesc(DDFilteredView *fv, DetGeomDesc *gd
 		// recursion
 		buildDetGeomDesc(fv, newGD);
 	} while (fv->nextSibling());
-
 	// go a level up
 	fv->parent();
 }
