@@ -8,7 +8,7 @@
 #include <memory>
 #include "TMatrixD.h"
 
-#include "SimG4Core/TotemRPProtonTransportParametrization/interface/TMultiDimFet.h"
+#include "TMultiDimFit.h"
 //#include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 
 
@@ -55,7 +55,7 @@ class LHCOpticsApproximator : public TNamed
     virtual ~LHCOpticsApproximator();
 
     /// begin and end position along the beam of the particle to transport, training_tree, prefix of data branch in the tree
-    LHCOpticsApproximator(std::string name, std::string title, TMultiDimFet::EMDFPolyType polynom_type,
+    LHCOpticsApproximator(std::string name, std::string title, TMultiDimFit::EMDFPolyType polynom_type,
         std::string beam_direction, double nominal_beam_momentum);
     LHCOpticsApproximator(const LHCOpticsApproximator &org);
     const LHCOpticsApproximator & operator=(const LHCOpticsApproximator &org);
@@ -90,7 +90,7 @@ class LHCOpticsApproximator : public TNamed
     bool CheckInputRange(const double *in, bool invert_beam_coord_sytems=true) const;
     void AddRectEllipseAperture(const LHCOpticsApproximator &in, double rect_x, double rect_y, double r_el_x, double r_el_y);
     void PrintOpticalFunctions();
-    void PrintCoordinateOpticalFunctions(TMultiDimFet &parametrization, const std::string &coord_name, const std::vector<std::string> &input_vars);
+    void PrintCoordinateOpticalFunctions(TMultiDimFit &parametrization, const std::string &coord_name, const std::vector<std::string> &input_vars);
     void GetLineariasedTransportMatrixX(double mad_init_x, double mad_init_thx, double mad_init_y, double mad_init_thy, 
         double mad_init_xi, TMatrixD &tr_matrix, double d_mad_x=10e-6, double d_mad_thx=10e-6);  ///< [m], [rad], xi:-1...0
     void GetLineariasedTransportMatrixY(
@@ -115,14 +115,14 @@ class LHCOpticsApproximator : public TNamed
     double nominal_beam_energy_;                      ///< GeV
     double nominal_beam_momentum_;                    ///< GeV/c
     bool trained_;                                    ///< trained polynomials
-    std::vector<TMultiDimFet*> out_polynomials;       //! pointers to polynomials
+    std::vector<TMultiDimFit*> out_polynomials;       //! pointers to polynomials
     std::vector<std::string> coord_names;
     std::vector<LHCApertureApproximator> apertures_;  ///< apertures on the way
 
-    TMultiDimFet x_parametrisation;                   ///< polynomial approximation for x
-    TMultiDimFet theta_x_parametrisation;             ///< polynomial approximation for theta_x
-    TMultiDimFet y_parametrisation;                   ///< polynomial approximation for y
-    TMultiDimFet theta_y_parametrisation;             ///< polynomial approximation for theta_y
+    TMultiDimFit x_parametrisation;                   ///< polynomial approximation for x
+    TMultiDimFit theta_x_parametrisation;             ///< polynomial approximation for theta_x
+    TMultiDimFit y_parametrisation;                   ///< polynomial approximation for y
+    TMultiDimFit theta_y_parametrisation;             ///< polynomial approximation for theta_y
 
 
 
@@ -130,8 +130,8 @@ class LHCOpticsApproximator : public TNamed
     enum variable_type {X, THETA_X, Y, THETA_Y};
     //internal methods
     void InitializeApproximators(polynomials_selection mode, int max_degree_x, int max_degree_tx, int max_degree_y, int max_degree_ty, bool common_terms);
-    void SetDefaultAproximatorSettings(TMultiDimFet &approximator, variable_type var_type, int max_degree);
-    void SetTermsManually(TMultiDimFet &approximator, variable_type variable, int max_degree, bool common_terms);
+    void SetDefaultAproximatorSettings(TMultiDimFit &approximator, variable_type var_type, int max_degree);
+    void SetTermsManually(TMultiDimFit &approximator, variable_type variable, int max_degree, bool common_terms);
 
     void AllocateErrorHists(TH1D *err_hists[4]);
     void AllocateErrorInputCorHists(TH2D *err_inp_cor_hists[4][5]);

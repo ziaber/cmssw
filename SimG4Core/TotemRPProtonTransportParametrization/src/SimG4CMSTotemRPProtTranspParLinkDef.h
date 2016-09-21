@@ -1,4 +1,4 @@
-#include "SimG4Core/TotemRPProtonTransportParametrization/interface/TMultiDimFet.h"
+#include "TMultiDimFit.h"
 #include "SimG4Core/TotemRPProtonTransportParametrization/interface/LHCOpticsApproximator.h"
 #include <vector>
 
@@ -11,7 +11,7 @@
 #pragma link off all classes;
 #pragma link off all functions;
 
-#pragma link C++ class TMultiDimFet+;
+#pragma link C++ class TMultiDimFit+;
 #pragma link C++ class LHCOpticsApproximator+;
 #pragma link C++ class LHCApertureApproximator+;
 #pragma link C++ class vector<LHCOpticsApproximator>+;

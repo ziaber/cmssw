@@ -4,7 +4,7 @@
 * $Date: 2008/04/10 14:54:19 $
 **********************************************************/
 
-#include "SimG4Core/TotemRPProtonTransportParametrization/interface/FitData.h"
+#include "FitData.h"
 
 FitData::FitData(){
 }

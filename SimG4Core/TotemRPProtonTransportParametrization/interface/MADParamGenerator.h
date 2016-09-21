@@ -9,7 +9,7 @@
 #include "TFile.h"
 
 
-#include "SimG4Core/TotemRPProtonTransportParametrization/interface/TMultiDimFet.h"
+#include "TMultiDimFit.h"
 #include "SimG4Core/TotemRPProtonTransportParametrization/interface/LHCOpticsApproximator.h"
 #include "SimG4Core/TotemRPProtonTransportParametrization/interface/RPXMLConfig.h"
 
@@ -47,7 +47,7 @@ struct Parametisation_configuration
   std::string samples_aperture_test_file_name;
   std::string destination_branch_prefix;
 
-  TMultiDimFet::EMDFPolyType polynomials_type;
+  TMultiDimFit::EMDFPolyType polynomials_type;
   LHCOpticsApproximator::polynomials_selection terms_selelection_mode;
   int max_degree_x;
   int max_degree_tx;

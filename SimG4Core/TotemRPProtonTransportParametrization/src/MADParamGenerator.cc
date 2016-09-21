@@ -3,7 +3,7 @@
 #include "TRandom.h"
 #include "TNtupleD.h"
 
-#include "SimG4Core/TotemRPProtonTransportParametrization/interface/FitData.h"
+#include "FitData.h"
 
 void MADParamGenerator::GenerateMADConfFile(const std::string &base_conf_file, const std::string &out_conf_file, const std::string &from_marker_name, double from_marker_s_pos, bool define_from, const std::string &to_marker_name, double to_marker_s_pos, bool define_to, int particles_number, bool aperture_limit, std::vector<std::string> scoring_planes, const std::string &beam)
 {
@@ -630,13 +630,13 @@ Parametisation_configuration MADParamGenerator::GetParamConfiguration(int id)
 
   std::string pol_type = xml_parser.get<std::string>(id, "polynomials_type");
   if(pol_type == "kMonomials")
-    conf.polynomials_type = TMultiDimFet::kMonomials;
+    conf.polynomials_type = TMultiDimFit::kMonomials;
   else if(pol_type == "kChebyshev")
-    conf.polynomials_type = TMultiDimFet::kChebyshev;
+    conf.polynomials_type = TMultiDimFit::kChebyshev;
   else if(pol_type == "kLegendre")
-    conf.polynomials_type = TMultiDimFet::kLegendre;
+    conf.polynomials_type = TMultiDimFit::kLegendre;
   else
-    conf.polynomials_type = TMultiDimFet::kMonomials;
+    conf.polynomials_type = TMultiDimFit::kMonomials;
 
   std::string sel_mode = xml_parser.get<std::string>(id, "terms_selelection_mode");
   if(sel_mode == "AUTOMATIC")

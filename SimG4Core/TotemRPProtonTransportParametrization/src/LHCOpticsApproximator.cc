@@ -32,7 +32,7 @@ void LHCOpticsApproximator::Init()
 }
 
 
-LHCOpticsApproximator::LHCOpticsApproximator(std::string name, std::string title, TMultiDimFet::EMDFPolyType polynom_type, std::string beam_direction, double nominal_beam_momentum)
+LHCOpticsApproximator::LHCOpticsApproximator(std::string name, std::string title, TMultiDimFit::EMDFPolyType polynom_type, std::string beam_direction, double nominal_beam_momentum)
 : x_parametrisation(5, polynom_type, "k"),
   theta_x_parametrisation(5, polynom_type, "k"),
   y_parametrisation(5, polynom_type, "k"),
@@ -418,7 +418,7 @@ void LHCOpticsApproximator::InitializeApproximators(polynomials_selection mode, 
 }
 
 
-void LHCOpticsApproximator::SetDefaultAproximatorSettings(TMultiDimFet &approximator, variable_type var_type, int max_degree)
+void LHCOpticsApproximator::SetDefaultAproximatorSettings(TMultiDimFit &approximator, variable_type var_type, int max_degree)
 {
   if(max_degree<1 || max_degree>20)
     max_degree = 10;
@@ -451,7 +451,7 @@ void LHCOpticsApproximator::SetDefaultAproximatorSettings(TMultiDimFet &approxim
 }
 
 
-void LHCOpticsApproximator::SetTermsManually(TMultiDimFet &approximator, variable_type variable, int max_degree, bool common_terms)
+void LHCOpticsApproximator::SetTermsManually(TMultiDimFit &approximator, variable_type variable, int max_degree, bool common_terms)
 {
   if(max_degree<1 || max_degree>20)
     max_degree = 10;
@@ -1023,7 +1023,7 @@ void LHCOpticsApproximator::PrintOpticalFunctions()
   }
 }
 
-void LHCOpticsApproximator::PrintCoordinateOpticalFunctions(TMultiDimFet &parametrization, const std::string &coord_name, const std::vector<std::string> &input_vars)
+void LHCOpticsApproximator::PrintCoordinateOpticalFunctions(TMultiDimFit &parametrization, const std::string &coord_name, const std::vector<std::string> &input_vars)
 {
   double in[5];
 //  double out;
