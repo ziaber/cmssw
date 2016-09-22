@@ -1,5 +1,5 @@
-#ifndef IOMC_FlatProtonLogKsiLogTGun_FlatProtonLogKsiLogTGun_h
-#define IOMC_FlatProtonLogKsiLogTGun_FlatProtonLogKsiLogTGun_h
+#ifndef FlatProtonLogKsiLogTGun_h
+#define FlatProtonLogKsiLogTGun_h
 
 #include <string>
 #include "HepPDT/defs.h"
