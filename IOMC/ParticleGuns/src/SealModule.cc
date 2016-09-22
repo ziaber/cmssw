@@ -43,6 +43,6 @@ using edm::ExpoRandomPGunProducer;
 DEFINE_FWK_MODULE(ExpoRandomPGunProducer);
 using edm::MultiParticleInConeGunProducer;
 DEFINE_FWK_MODULE(MultiParticleInConeGunProducer);
-using edm::(FlatProtonLogKsiLogTGun);
+using edm::FlatProtonLogKsiLogTGun;
 DEFINE_FWK_MODULE(FlatProtonLogKsiLogTGun);
 
