@@ -14,6 +14,7 @@
 #include "IOMC/ParticleGuns/interface/ExpoRandomPtGunProducer.h"
 #include "IOMC/ParticleGuns/interface/ExpoRandomPGunProducer.h"
 #include "IOMC/ParticleGuns/interface/MultiParticleInConeGunProducer.h"
+#include "IOMC/ParticleGuns/interface/FlatProtonLogKsiLogTGun.h"
 
 // particle gun prototypes
 //
