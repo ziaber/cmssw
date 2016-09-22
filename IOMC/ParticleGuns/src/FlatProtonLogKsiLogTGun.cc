@@ -245,4 +245,4 @@ void FlatProtonLogKsiLogTGun::produce(edm::Event& e, const edm::EventSetup& es)
   }
 }
 
-DEFINE_FWK_MODULE(FlatProtonLogKsiLogTGun);
+//DEFINE_FWK_MODULE(FlatProtonLogKsiLogTGun);

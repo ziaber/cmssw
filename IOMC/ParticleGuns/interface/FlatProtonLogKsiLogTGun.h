@@ -1,5 +1,5 @@
-#ifndef IOMC_FlatProtonLogKsiLogTGun_FlatProtonLogKsiLogTGun_h
-#define IOMC_FlatProtonLogKsiLogTGun_FlatProtonLogKsiLogTGun_h
+#ifndef FlatProtonLogKsiLogTGun_h
+#define FlatProtonLogKsiLogTGun_h
 
 #include <string>
 #include "HepPDT/defs.h"
@@ -8,7 +8,7 @@
 
 #include "HepMC/GenEvent.h"
 
-#include "FWCore/Framework/interface/EDProducer.h"
+#include "FWCore/Framework/interface/one/EDProducer.h"
 #include "FWCore/Framework/interface/ESHandle.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
 
@@ -24,7 +24,8 @@ namespace HepMC {
 }
 
 
-class FlatProtonLogKsiLogTGun : public edm::EDProducer
+class FlatProtonLogKsiLogTGun : public one::EDProducer<one::WatchRuns,
+                                                          EndRunProducer>
 {
   public:
     FlatProtonLogKsiLogTGun(const edm::ParameterSet &);
