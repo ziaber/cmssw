@@ -75,23 +75,6 @@ RPDigiProducer::~RPDigiProducer() {
 // ------------ method called to produce the data  ------------
 void RPDigiProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSetup) {
 	using namespace edm;
-	/* This is an event example
-	 //Read 'PSimHit' from the Event
-	 Handle<PSimHit> pIn;
-	 iEvent.getByLabel("TotemHitsRP",pIn);
-
-	 //Use the ExampleData to create an ExampleData2 which
-	 // is put into the Event
-	 std::auto_ptr<ExampleData2> pOut(new ExampleData2(*pIn));
-	 iEvent.put(pOut);
-	 */
-
-	/* this is an EventSetup example
-	 //Read SetupData from the SetupRecord in the EventSetup
-	 ESHandle<SetupData> pSetup;
-	 iSetup.get<SetupRecord>().get(pSetup);
-	 */
-
 	// initialize random engine
 	if(!rndEngine) {
 		Service<RandomNumberGenerator> rng;
