@@ -57,7 +57,7 @@ public:
 
   double       getEM() const;
   void         setEM (double e);
-
+ 
   double       getHadr() const;
   void         setHadr (double e);
 
