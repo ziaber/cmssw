@@ -32,15 +32,7 @@ process.source = cms.Source("EmptySource")
 process.load("Configuration.TotemCommon.RandomNumbers_cfi")
 
 # Monte Carlo gun - elastic specific
-energy = "7000"
-import IOMC.Elegent.ElegentSource_cfi
-process.generator = IOMC.Elegent.ElegentSource_cfi.generator
-process.generator.fileName = IOMC.Elegent.ElegentSource_cfi.ElegentDefaultFileName(energy)
-
-# particle generator paramteres
-process.generator.t_min = '6E-2'  # beta* specific
-process.generator.t_max = '6E-1'  # beta* specific
-energy = "1180"
+process.load("Configuration.Generator.SingleProton_cfi")
 
 
 ################## STEP 3 process.SmearingGenerator
