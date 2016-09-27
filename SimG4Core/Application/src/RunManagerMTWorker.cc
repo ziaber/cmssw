@@ -223,7 +223,7 @@ void RunManagerMTWorker::initializeThread(RunManagerMT& runManagerMaster, const 
   // runManagerMaster instead of EventSetup in here?
   edm::ESTransientHandle<DDCompactView> pDD;
   if(m_useMeasuredGeom)
-    es.get<MeasuredGeometryRecord>().get(pDD);
+    es.get<VeryForwardMeasuredGeometryRecord>().get(pDD);
   else
     es.get<IdealGeometryRecord>().get(pDD);
 
