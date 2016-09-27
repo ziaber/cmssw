@@ -9,10 +9,9 @@ generator = cms.EDProducer("FlatRandomEGunProducer",
         MinE = cms.double(6499),
         MinPhi = cms.double(-3.141592654), ## in radians
         MaxE = cms.double(6500),
-        instanceLabel = cms.untracked.string('generator')
     ),
+    instanceLabel=cms.untracked.string('generator'),
     Verbosity = cms.untracked.int32(10), ## set to 1 (or greater)  for printouts
-
     psethack = cms.string('single proton'),
     AddAntiParticle = cms.bool(False),
     firstRun = cms.untracked.uint32(1)
