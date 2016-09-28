@@ -1,7 +1,7 @@
 #ifndef RecoTotemRP_RPRecoDataFormats_RPTrackCandidateCollection_h
 #define RecoTotemRP_RPRecoDataFormats_RPTrackCandidateCollection_h
  
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPTrackCandidate.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPTrackCandidate.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 
 #include <map>

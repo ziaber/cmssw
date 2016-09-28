@@ -1,7 +1,7 @@
 #ifndef RecoTotemRP_RPRecoDataFormats_RPTrackCandidateDistinctCollectionsSet_h
 #define RecoTotemRP_RPRecoDataFormats_RPTrackCandidateDistinctCollectionsSet_h
  
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPTrackCandidateCollection.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPTrackCandidateCollection.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 #include <vector>
 #include <map>
