@@ -21,7 +21,7 @@
 #include "DataFormats/Common/interface/DetSetVector.h"
 #include "DataFormats/Common/interface/Wrapper.h"
 #include "fastjet/ClusterSequence.hh"
-
+#include "DataFormats/TotemL1Trigger/interface/RPCCBits.h"
 
 class PrimaryProton
 {

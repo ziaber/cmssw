@@ -246,7 +246,7 @@ void RPNtuplizer::FillEvent(const edm::Event& e, const edm::EventSetup& es)
       //(inputIterator->data)[i] : RPDigCluster
       for (unsigned int i = 0; i < (inputIteratorCl->data).size(); ++i)
       {
-        unsigned int detNo = TotemRPDetId::RawToDecId((inputIteratorCl->data)[i].DetId());
+        unsigned int detNo = TotemRPDetId::rawToDecId((inputIteratorCl->data)[i].DetId());
   	  	unsigned int planeNo = detNo % 10;
   	  	unsigned int RPNo = detNo / 10;
 
