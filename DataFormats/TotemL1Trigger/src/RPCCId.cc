@@ -13,13 +13,13 @@
 #include "DataFormats/TotemL1Trigger/interface/RPCCId.h"
 #include "FWCore/Utilities/interface/Exception.h"
 
-RPCCId::RPCCId():DetId(DetId::Totem,totem_rp_subdet_id)
+RPCCId::RPCCId():DetId(DetId::VeryForward,totem_rp_subdet_id)
 {}
 
 
 RPCCId::RPCCId(RPCCIdRaw id):DetId(id)
 {
-  if (det()!=DetId::Totem || subdetId()!=totem_rp_subdet_id)
+  if (det()!=DetId::VeryForward || subdetId()!=totem_rp_subdet_id)
     {
       throw cms::Exception("InvalidDetId") << "RPCCId:"
 					   << " det: " << det()
@@ -55,7 +55,7 @@ void RPCCId::init(unsigned int Arm, unsigned int Station,
 
 RPCCId::RPCCId(unsigned int Arm, unsigned int Station,
 	       unsigned int RomanPot, unsigned int Direction):
-  DetId(DetId::Totem,totem_rp_subdet_id)
+  DetId(DetId::VeryForward,totem_rp_subdet_id)
 {
   this->init(Arm,Station,RomanPot,Direction);
 }
