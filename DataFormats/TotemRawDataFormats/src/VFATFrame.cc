@@ -8,8 +8,8 @@
 *
 ****************************************************************************/
 
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrame.h"
-#include "TotemRawDataLibrary/DataFormats/interface/CommonDef.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrame.h"
+#include "DataFormats/TotemRawDataFormats/interface/CommonDef.h"
 
 #include <stdio.h>
 #include <cstring>

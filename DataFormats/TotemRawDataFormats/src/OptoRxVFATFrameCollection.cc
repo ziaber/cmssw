@@ -8,7 +8,7 @@
 ****************************************************************************/
 
 
-#include "TotemRawDataLibrary/DataFormats/interface/OptoRxVFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/OptoRxVFATFrameCollection.h"
 
 #include <cstdio>
 

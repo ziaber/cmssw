@@ -14,7 +14,7 @@
 #define _Totem_SLINK_FRAME__
 
 #include <vector>
-#include "TotemRawDataLibrary/DataFormats/interface/SimpleVFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/SimpleVFATFrameCollection.h"
 
 namespace Totem {
 

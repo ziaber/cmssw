@@ -10,7 +10,7 @@
 #ifndef _Totem_RawEvent_h_
 #define _Totem_RawEvent_h_
 
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrameCollection.h"
 
 #include <ctime>
 #include <map>

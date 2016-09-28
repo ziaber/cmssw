@@ -9,7 +9,7 @@
 ****************************************************************************/
 
 
-#include "TotemRawDataLibrary/DataFormats/interface/SimpleVFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/SimpleVFATFrameCollection.h"
 
 //#define DEBUG 1
 

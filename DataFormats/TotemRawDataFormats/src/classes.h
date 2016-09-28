@@ -7,12 +7,12 @@
 *    
 ****************************************************************************/
 
-#include "TotemRawDataLibrary/DataFormats/interface/RawEvent.h"
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrame.h"
-#include "TotemRawDataLibrary/DataFormats/interface/FramePosition.h"
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrameCollection.h"
-#include "TotemRawDataLibrary/DataFormats/interface/SimpleVFATFrameCollection.h"
-#include "TotemRawDataLibrary/DataFormats/interface/OptoRxVFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/RawEvent.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrame.h"
+#include "DataFormats/TotemRawDataFormats/interface/FramePosition.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/SimpleVFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/OptoRxVFATFrameCollection.h"
 #include "DataFormats/Common/interface/Wrapper.h"
 #include <vector>
 

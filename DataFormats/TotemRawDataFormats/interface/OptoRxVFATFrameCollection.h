@@ -11,8 +11,8 @@
 #ifndef _Totem_OptoRxVFATFrameCollection_h_
 #define _Totem_OptoRxVFATFrameCollection_h_
 
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrameCollection.h"
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrame.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrame.h"
 
 #include <map>
 

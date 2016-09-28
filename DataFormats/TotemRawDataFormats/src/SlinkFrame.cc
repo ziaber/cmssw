@@ -8,7 +8,7 @@
 ****************************************************************************/
 
 
-#include "TotemRawDataLibrary/DataFormats/interface/SlinkFrame.h"
+#include "DataFormats/TotemRawDataFormats/interface/SlinkFrame.h"
 
 #include <iostream>
 #include <vector>

@@ -8,8 +8,8 @@
 ****************************************************************************/
 
 
-#include "TotemRawDataLibrary/DataFormats/interface/FramePosition.h"
-#include "TotemRawDataLibrary/DataFormats/interface/CommonDef.h"
+#include "DataFormats/TotemRawDataFormats/interface/FramePosition.h"
+#include "DataFormats/TotemRawDataFormats/interface/CommonDef.h"
 
 #include <iomanip>
 #include <cstdlib>

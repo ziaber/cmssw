@@ -11,8 +11,8 @@
 #ifndef _Totem_VFATFrameCollection_h_
 #define _Totem_VFATFrameCollection_h_
 
-#include "TotemRawDataLibrary/DataFormats/interface/FramePosition.h"
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrame.h"
+#include "DataFormats/TotemRawDataFormats/interface/FramePosition.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrame.h"
 
 #include <string>
 

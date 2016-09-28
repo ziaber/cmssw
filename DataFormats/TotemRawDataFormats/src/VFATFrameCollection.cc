@@ -8,7 +8,7 @@
 ****************************************************************************/
 
 
-#include "TotemRawDataLibrary/DataFormats/interface/VFATFrameCollection.h"
+#include "DataFormats/TotemRawDataFormats/interface/VFATFrameCollection.h"
 
 namespace Totem {
     
