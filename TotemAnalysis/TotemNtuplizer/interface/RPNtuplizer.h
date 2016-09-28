@@ -23,6 +23,15 @@
 #include "fastjet/ClusterSequence.hh"
 
 
+class PrimaryProton
+{
+  public:
+    HepMC::FourVector vertex;
+    HepMC::FourVector momentum;
+    bool found;
+};
+
+
 /**
  *\brief Saves RP reconstruction data into the common ntuple.
  **/
