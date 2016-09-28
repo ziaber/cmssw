@@ -18,7 +18,7 @@
 #ifndef RecoTotemRP_RPRecoDataFormats_RPMulTrackCandidateCollection_h
 #define RecoTotemRP_RPRecoDataFormats_RPMulTrackCandidateCollection_h
  
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPTrackCandidate.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPTrackCandidate.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 
 #include <vector>

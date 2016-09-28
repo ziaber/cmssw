@@ -6,7 +6,7 @@
  *
  ****************************************************************************/
 
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPStationTrackFit.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPStationTrackFit.h"
 
 RPStationTrackFit::RPStationTrackFit() : covarianceMatrix(4, 4)
 {

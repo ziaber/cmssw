@@ -1,4 +1,4 @@
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPReconstructedProtonPair.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPReconstructedProtonPair.h"
 #include "TMath.h"
 #include "TotemCondFormats/BeamOpticsParamsObjects/interface/RPRecoProtMADXVariables.h"
 #include <vector>

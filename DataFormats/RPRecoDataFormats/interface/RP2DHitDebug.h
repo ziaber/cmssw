@@ -2,7 +2,7 @@
 #define RecoTotemRP_RPRecoDataFormats_RP2DHitDebug_h
 
 #include "TMath.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RP2DHit.h"
+#include "DataFormats/RPRecoDataFormats/interface/RP2DHit.h"
 
 
 class RP2DHitDebug : public RP2DHit

@@ -2,13 +2,13 @@
 #define RecoTotemRP_RPRecoDataFormats_RPReconstructedProton_h
 
 #include "TNamed.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RP2DHitDebug.h"
+#include "DataFormats/RPRecoDataFormats/interface/RP2DHitDebug.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 #include "TVector2.h"
 #include <map>
 #include <ostream>
 #include "TMath.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPReconstructedProton.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPReconstructedProton.h"
 #include "TotemCondFormats/BeamOpticsParamsObjects/interface/RPRecoProtMADXVariables.h"
 
 class RPReconstructedProton

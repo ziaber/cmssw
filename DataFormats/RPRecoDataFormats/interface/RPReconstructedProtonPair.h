@@ -2,7 +2,7 @@
 #define RecoTotemRP_RPRecoDataFormats_RPReconstructedProtonPair_h
 
 #include "TNamed.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RP2DHitDebug.h"
+#include "DataFormats/RPRecoDataFormats/interface/RP2DHitDebug.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
 #include "TVector2.h"
 #include <map>

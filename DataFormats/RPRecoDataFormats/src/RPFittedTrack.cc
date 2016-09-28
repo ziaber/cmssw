@@ -1,4 +1,4 @@
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPFittedTrack.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPFittedTrack.h"
 
 
 TMatrixD RPFittedTrack::TrackPointInterpolationCovariance(double z) const

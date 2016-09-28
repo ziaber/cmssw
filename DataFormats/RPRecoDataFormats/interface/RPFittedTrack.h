@@ -15,7 +15,7 @@
 #define RecoTotemRP_RPRecoDataFormats_RPFittedTrack_h
 
 #include "DataFormats/TotemRPDataTypes/interface/RPRecoHit.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPTrackCandidate.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPTrackCandidate.h"
 
 #include "TROOT.h"
 #include "TVector3.h"

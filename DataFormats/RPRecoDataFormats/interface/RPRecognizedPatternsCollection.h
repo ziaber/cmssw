@@ -14,7 +14,7 @@
 #define RecoTotemRP_RPRecoDataFormats_RPRecognizedPatternsCollection_h
 
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPRecognizedPatterns.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPRecognizedPatterns.h"
 
 #include <map>
 

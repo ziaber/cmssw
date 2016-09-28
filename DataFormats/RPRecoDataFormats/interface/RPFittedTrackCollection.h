@@ -3,7 +3,7 @@
 
 
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPFittedTrack.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPFittedTrack.h"
 
 #include <map>
 

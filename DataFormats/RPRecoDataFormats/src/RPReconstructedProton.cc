@@ -1,4 +1,4 @@
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPReconstructedProton.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPReconstructedProton.h"
 #include "TMath.h"
 
 

@@ -1,4 +1,4 @@
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPRecoElasticEvent.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPRecoElasticEvent.h"
 
 ///----------------------------------------------------------------------------------------------------
 

@@ -10,7 +10,7 @@
 #define RecoTotemRP_RPRecoDataFormats_RPStationTrackFitCollection_h
 
 
-#include "RecoTotemRP/RPRecoDataFormats/interface/RPStationTrackFit.h"
+#include "DataFormats/RPRecoDataFormats/interface/RPStationTrackFit.h"
 
 #include <map>
 #include <vector>
