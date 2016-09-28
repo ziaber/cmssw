@@ -8,10 +8,9 @@
 <use   name="DataFormats/TotemRPDetId"/>
 <use   name="DataFormats/TotemL1Trigger"/>
 <use   name="DataFormats/RPRecoDataFormats"/>
-<use   name="DataFormats/RPRomanPotResolutionService"/>
 <use   name="TotemCondFormats/DataRecord"/>
-<use   name="Geometry/TotemRPGeometryBuilder"/>
-<use   name="Geometry/TotemRecords"/>
+<use   name="Geometry/VeryForwardGeometryBuilder"/>
+<use   name="Geometry/Records"/>
 <use   name="SimDataFormats/GeneratorProducts"/>
 <use   name="fastjet"/>
 <export>
