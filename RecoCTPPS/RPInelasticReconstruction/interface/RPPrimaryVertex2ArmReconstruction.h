@@ -14,7 +14,7 @@
 #include "DataFormats/RPRecoDataFormats/interface/RPFittedTrack.h"
 #include "DataFormats/RPRecoDataFormats/interface/RPFittedTrackCollection.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPTypes.h"
-#include "RecoTotemRP/RPRecoDataFormats/interface/RP2DHit.h"
+#include "DataFormats/RPRecoDataFormats/interface/RP2DHit.h"
 #include "TVector3.h"
 #include "CLHEP/Vector/LorentzVector.h"
 #include "TRandom2.h"
