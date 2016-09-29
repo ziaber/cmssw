@@ -9,7 +9,7 @@
 
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 
-#include "RecoCTPSS/RPTrackCandidateFitter/interface/RPTrackCandidateFitter.h"
+#include "RecoCTPPS/RPTrackCandidateFitter/interface/RPTrackCandidateFitter.h"
 #include "DataFormats/RPRecoDataFormats/interface/RPTrackCandidate.h"
 #include "DataFormats/TotemRPDataTypes/interface/RPMathUtils.h"
 
