@@ -17,6 +17,7 @@
 #include "TMatrixD.h"
 #include <iostream>
 
+using namespace std;
 
 RPTrackCandidateFitter::RPTrackCandidateFitter(const edm::ParameterSet &)
 {
